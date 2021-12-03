@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &720242091612092704
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 398576314280109506}
+  - component: {fileID: 3679361964268002510}
+  - component: {fileID: 2680485731007970307}
+  - component: {fileID: 4664458153151348303}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &398576314280109506
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720242091612092704}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3679361964268002510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720242091612092704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c8ff6b3d956f384da8772105b4c6d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startExploreCount: 0
+  startPathCount: 0
+  counter: 0
+  exploreInterval: 0.2
+  pathInterval: 0.2
+  exploreCounter: 0
+  resultCounter: 0
+  explored: []
+  result: []
+  weight: 1
+  algorithm: 0
+--- !u!114 &2680485731007970307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720242091612092704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f500568c34ad89a4383c1c21935bd830, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  node: {fileID: 0}
+  startNode: {fileID: 0}
+  endNode: {fileID: 0}
+  blockPath: []
+  selectedNode: []
+  selection: {fileID: 4087527023524455233, guid: aeb8e037fc9d2d74085253fb79b37dcb,
+    type: 3}
+--- !u!114 &4664458153151348303
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 720242091612092704}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aecd6ae302076245b57e3e4db8519e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  row: 20
+  column: 20
+  padding: 1.5
+  nodePrefab: {fileID: 5569552738608990907, guid: ab92b0cb14f3cda4983f367d1cac5887,
+    type: 3}
+  enableDiagonal: 1
+  grid: []
